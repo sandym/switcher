@@ -12,6 +12,7 @@
 #include <type_traits>
 #include <tuple>
 #include <utility>
+#include <ciso646>
 
 namespace Switcher_details
 {
@@ -63,7 +64,7 @@ class Switcher
 	bool matched = false;
 
 	template <class T, std::size_t... I>
-	constexpr auto extract_matches( T &&t, std::index_sequence<I...>)
+	constexpr auto extract_matches( T &&t, std::index_sequence<I...>) const
 	{
 		return std::forward_as_tuple( std::get<I>( std::forward<T>(t))... );
 	}

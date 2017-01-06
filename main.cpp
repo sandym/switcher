@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <string>
 #include "switch.h"
 
 int main(int argc, const char * argv[])
