@@ -1,6 +1,6 @@
 # C++ multi-switch implementation
 
-```
+```c++
 #include "switch.h"
 
 Switch( username, passwordIsValid )
